@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>mozilla-build</id>
+    <version>1.0</version>
+    <title>Mozilla Build</title>
+    <authors>Mozilla Foundation</authors>
+    <owners>relops, grenade</owners>
+    <licenseUrl>http://www.mozilla.org/MPL/2.0/</licenseUrl>
+    <projectUrl>https://wiki.mozilla.org/MozillaBuild</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Mozilla Build is a meta package that provides the tools required for building Firefox on Windows</description>
+    <summary>MozillaBuild Windows toolchain</summary>
+    <copyright>Mozilla</copyright>
+    <tags>MozillaBuild</tags>
+  </metadata>
+</package>
