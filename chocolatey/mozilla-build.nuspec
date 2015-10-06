@@ -14,7 +14,7 @@
     <summary>MozillaBuild Windows toolchain</summary>
     <copyright>Mozilla</copyright>
     <tags>MozillaBuild</tags>
-    <releaseNotes>
+    <releaseNotes><![CDATA[
 Important changes since version 1.9.0:
 * Various fixes for compiler and platform SDK detection that makes building ANGLE much more reliable.
 * Updates Mercurial to version 3.0.2.
@@ -23,13 +23,13 @@ Important changes since version 1.9.0:
 * Inclusion of vlad's winrm - a much-faster replacement for rm.exe.
 
 Full changelog:
-http://hg.mozilla.org/mozilla-build/pushloghtml?fromchange=190992f68fc9&amp;tochange=2ef77fefefa5
+http://hg.mozilla.org/mozilla-build/pushloghtml?fromchange=190992f68fc9&tochange=2ef77fefefa5
 
 To upgrade:
 1. Remove your current installation. If you can't remove the existing installation, you probably have a terminal open or ssh-agent running. Terminate it and try again.
 2. Install MozillaBuild 1.10.0.
 3. Clobber (remove the object directory of) any trees you have. (If you don't do this, you may get weird build errors).
 
-Please file any problems you come across in mozilla.org::MozillaBuild.</releaseNotes>
+Please file any problems you come across in mozilla.org::MozillaBuild.]]></releaseNotes>
   </metadata>
 </package>
