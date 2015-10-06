@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MozillaBuild</id>
-    <version>1.10.0</version>
+    <version>1.11.0</version>
     <title>Mozilla Build</title>
     <authors>Mozilla Foundation</authors>
     <owners>relops</owners>
@@ -15,19 +15,16 @@
     <copyright>Mozilla</copyright>
     <tags>MozillaBuild</tags>
     <releaseNotes>
-Important changes since version 1.9.0:
-* Various fixes for compiler and platform SDK detection that makes building ANGLE much more reliable.
-* Updates Mercurial to version 3.0.2.
-* The size of the installer was reduced by nearly 7MB by pruning long-obsolete components from the package (sorry, we can't run local Tinderbox instances anymore).
-* Updates to many components, such as wget, sed, tar, and info-zip.
-* Inclusion of vlad's winrm - a much-faster replacement for rm.exe.
+Important changes since version 1.10.0:
+* Updated Mercurial to version 3.2.3, which includes the fix for CVE-2014-9390 disclosed last week.
+* Updated Python to version 2.7.8. This was previously blocked on the EOL of esr24. While version 2.7.9 has been released, we aren't comfortable taking it at this time due to the large-scale changes backported to it.
 
-Full changelog:
-http://hg.mozilla.org/mozilla-build/pushloghtml?fromchange=190992f68fc9&amp;tochange=2ef77fefefa5
+Full changelog: 
+http://hg.mozilla.org/mozilla-build/pushloghtml?fromchange=MOZILLABUILD_1_10_0_RELEASE&amp;tochange=MOZILLABUILD_1_11_0_RELEASE
 
 To upgrade:
 1. Remove your current installation. If you can't remove the existing installation, you probably have a terminal open or ssh-agent running. Terminate it and try again.
-2. Install MozillaBuild 1.10.0.
+2. Install MozillaBuild 1.11.0.
 3. Clobber (remove the object directory of) any trees you have. (If you don't do this, you may get weird build errors).
 
 Please file any problems you come across in mozilla.org::MozillaBuild.</releaseNotes>
