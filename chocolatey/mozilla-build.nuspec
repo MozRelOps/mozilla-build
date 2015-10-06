@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MozillaBuild</id>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <title>Mozilla Build</title>
     <authors>Mozilla Foundation</authors>
     <owners>relops</owners>
@@ -15,16 +15,19 @@
     <copyright>Mozilla</copyright>
     <tags>MozillaBuild</tags>
     <releaseNotes>
-* Updated Python to version 2.7.5 (fixes a bug in 2.7.4 that was causing Firefox OS Simulator's build process to fail) 
-* Updated Mercurial to version 2.6.3 
-* Updated yasm to version 1.2.0 
-* Updated emacs to version 24.3 
-* Added support for Visual Studio 2013 and Win SDK 8.1 
-* Included the MSYS mktemp application 
+There are some pretty significant changes in this release from version 1.8.0:
+* Significantly improved support for the Win8.1 SDK and MSVC2013.
+* Removes support for < MSVC10 and Windows SDK < v7.
+* Adds mozmake, a custom compile of gmake 4.0-43 and the successor to pymake.
+* Adds NSIS 3.0a2 and remove version 2.33u.
+* Updates Mercurial to version 2.9.1.
 
-To upgrade, 
-1. Remove your current installation. If you can't remove the existing installation, you probably have a terminal open or ssh-agent running. Terminate it and try again. 
-2. Install MozillaBuild 1.8.0. 
+Full changelog:
+http://hg.mozilla.org/mozilla-build/pushloghtml?fromchange=8be93f0b6ef9&amp;tochange=190992f68fc9
+
+To upgrade:
+1. Remove your current installation. If you can't remove the existing installation, you probably have a terminal open or ssh-agent running. Terminate it and try again.
+2. Install MozillaBuild 1.9.0.
 3. Clobber (remove the object directory of) any trees you have. (If you don't do this, you may get weird build errors).
 
 Please file any problems you come across in mozilla.org::MozillaBuild.</releaseNotes>
