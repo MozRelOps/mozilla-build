@@ -14,7 +14,7 @@
     <summary>MozillaBuild Windows toolchain</summary>
     <copyright>Mozilla</copyright>
     <tags>MozillaBuild</tags>
-    <releaseNotes>
+    <releaseNotes><![CDATA[
 There are some pretty significant changes in this release from version 1.8.0:
 * Significantly improved support for the Win8.1 SDK and MSVC2013.
 * Removes support for < MSVC10 and Windows SDK < v7.
@@ -30,6 +30,6 @@ To upgrade:
 2. Install MozillaBuild 1.9.0.
 3. Clobber (remove the object directory of) any trees you have. (If you don't do this, you may get weird build errors).
 
-Please file any problems you come across in mozilla.org::MozillaBuild.</releaseNotes>
+Please file any problems you come across in mozilla.org::MozillaBuild.]]></releaseNotes>
   </metadata>
 </package>
