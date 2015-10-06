@@ -1,17 +1,33 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>mozilla-build</id>
-    <version>2.0.0</version>
+    <id>MozillaBuild</id>
+    <version>1.7</version>
     <title>Mozilla Build</title>
     <authors>Mozilla Foundation</authors>
-    <owners>relops, grenade</owners>
+    <owners>relops</owners>
     <licenseUrl>http://www.mozilla.org/MPL/2.0/</licenseUrl>
     <projectUrl>https://wiki.mozilla.org/MozillaBuild</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/86398e852098e5c4fa7aed9682aff3ad?s=128</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Mozilla Build is a meta package that provides the tools required for building Firefox on Windows</description>
     <summary>MozillaBuild Windows toolchain</summary>
     <copyright>Mozilla</copyright>
     <tags>MozillaBuild</tags>
+    <releaseNotes>
+- Support for the 8.0 SDK with MSVC 2010 
+- Mercurial 2.5.4 
+- Python 2.7.4 
+- NSIS 2.22 has been removed. 
+
+To upgrade, 
+1. Remove your current mozillabuild installation.  (If you can't remove the 
+existing installation, you probably have a Mozillabuild terminal open or 
+ssh-agent running.  Terminate it and try again). 
+2. Install MozillaBuild 1.7. 
+3. Clobber (remove the object directory of) any trees you have. (If you 
+don't do this you'll get weird build errors). 
+
+Please file any problems you come across in mozilla.org::MozillaBuild.</releaseNotes>
   </metadata>
 </package>
