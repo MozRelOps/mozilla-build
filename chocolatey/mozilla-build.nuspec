@@ -14,7 +14,7 @@
     <summary>MozillaBuild Windows toolchain</summary>
     <copyright>Mozilla</copyright>
     <tags>MozillaBuild</tags>
-    <releaseNotes>
+    <releaseNotes><![CDATA[
 * Updated Python to version 2.7.5 (fixes a bug in 2.7.4 that was causing Firefox OS Simulator's build process to fail) 
 * Updated Mercurial to version 2.6.3 
 * Updated yasm to version 1.2.0 
@@ -27,6 +27,6 @@ To upgrade,
 2. Install MozillaBuild 1.8.0. 
 3. Clobber (remove the object directory of) any trees you have. (If you don't do this, you may get weird build errors).
 
-Please file any problems you come across in mozilla.org::MozillaBuild.</releaseNotes>
+Please file any problems you come across in mozilla.org::MozillaBuild.]]></releaseNotes>
   </metadata>
 </package>
