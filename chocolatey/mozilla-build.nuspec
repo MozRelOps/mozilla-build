@@ -14,7 +14,7 @@
     <summary>MozillaBuild Windows toolchain</summary>
     <copyright>Mozilla</copyright>
     <tags>MozillaBuild</tags>
-    <releaseNotes>
+    <releaseNotes><![CDATA[
 Important changes since version 1.10.0:
 * Updated Mercurial to version 3.2.3, which includes the fix for CVE-2014-9390 disclosed last week.
 * Updated Python to version 2.7.8. This was previously blocked on the EOL of esr24. While version 2.7.9 has been released, we aren't comfortable taking it at this time due to the large-scale changes backported to it.
@@ -27,6 +27,6 @@ To upgrade:
 2. Install MozillaBuild 1.11.0.
 3. Clobber (remove the object directory of) any trees you have. (If you don't do this, you may get weird build errors).
 
-Please file any problems you come across in mozilla.org::MozillaBuild.</releaseNotes>
+Please file any problems you come across in mozilla.org::MozillaBuild.]]></releaseNotes>
   </metadata>
 </package>
