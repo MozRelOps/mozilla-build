@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MozillaBuild</id>
-    <version>1.7</version>
+    <version>1.8.0</version>
     <title>Mozilla Build</title>
     <authors>Mozilla Foundation</authors>
     <owners>relops</owners>
@@ -15,18 +15,17 @@
     <copyright>Mozilla</copyright>
     <tags>MozillaBuild</tags>
     <releaseNotes>
-- Support for the 8.0 SDK with MSVC 2010 
-- Mercurial 2.5.4 
-- Python 2.7.4 
-- NSIS 2.22 has been removed. 
+* Updated Python to version 2.7.5 (fixes a bug in 2.7.4 that was causing Firefox OS Simulator's build process to fail) 
+* Updated Mercurial to version 2.6.3 
+* Updated yasm to version 1.2.0 
+* Updated emacs to version 24.3 
+* Added support for Visual Studio 2013 and Win SDK 8.1 
+* Included the MSYS mktemp application 
 
 To upgrade, 
-1. Remove your current mozillabuild installation.  (If you can't remove the 
-existing installation, you probably have a Mozillabuild terminal open or 
-ssh-agent running.  Terminate it and try again). 
-2. Install MozillaBuild 1.7. 
-3. Clobber (remove the object directory of) any trees you have. (If you 
-don't do this you'll get weird build errors). 
+1. Remove your current installation. If you can't remove the existing installation, you probably have a terminal open or ssh-agent running. Terminate it and try again. 
+2. Install MozillaBuild 1.8.0. 
+3. Clobber (remove the object directory of) any trees you have. (If you don't do this, you may get weird build errors).
 
 Please file any problems you come across in mozilla.org::MozillaBuild.</releaseNotes>
   </metadata>
