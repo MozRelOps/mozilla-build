@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mozilla-build</id>
-    <version>2.0.0</version>
+    <version>2.2.0</version>
     <title>Mozilla Build</title>
     <authors>Mozilla Foundation</authors>
     <owners>relops, grenade</owners>
